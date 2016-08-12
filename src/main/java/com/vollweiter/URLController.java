@@ -18,4 +18,14 @@ public class URLController {
     public String products() {
         return "products";
     }
+
+    @RequestMapping("/repair")
+    public String repair() {
+        return "repair";
+    }
+
+    @RequestMapping("/ajax/doors")
+    public String haustueren() {
+        return "fragments/doors";
+    }
 }
