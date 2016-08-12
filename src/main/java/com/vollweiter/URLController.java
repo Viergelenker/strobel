@@ -7,10 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by Julien on 07.08.16.
  */
 @Controller
-public class IndexController {
+public class URLController {
 
     @RequestMapping("/")
-    public String index() {
+    public String welcome() {
         return "welcome";
+    }
+
+    @RequestMapping("/products")
+    public String products() {
+        return "products";
     }
 }
