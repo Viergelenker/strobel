@@ -168,7 +168,6 @@ h4 {
 
 /* Parallax */
 body, html {
-    background-color: rgb(237,237,237);
     height: 100%;
     margin: 0;
 }
@@ -183,13 +182,12 @@ body, html {
 }
 .bgimg-1 {
     background-image: linear-gradient(to bottom, #0078A0, #8ADBD7);
-    padding-top: 20px;
     min-height: 700px;
 }
 
 .bgimg-2 {
     background-image: linear-gradient(to bottom, #0078A0, #8ADBD7);
-    min-height: 500px;
+    min-height: 50%;
 }
 
 .caption1 {
