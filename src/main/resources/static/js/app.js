@@ -3,8 +3,8 @@
  */
 $(document).foundation();
 
-$(document).ready(function(){
-    $("#doors").click(function(){
+$(document).ready(function () {
+    $("#doors").click(function () {
         $("#box").load("/ajax/doors");
     });
 });

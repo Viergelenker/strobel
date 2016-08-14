@@ -5,119 +5,313 @@
 </head>
 <body>
 
-<div class="row" style="background-color: rgb(237,237,237); min-width: 100%">
+<!-- Navbar -->
+<div data-sticky-container="">
+    <div class="row sticky" data-sticky="" data-margin-top="" data-options="stickTo:top; stickyOn:small;"
+         style="background-color: rgb(237,237,237); min-width: 100%">
 
-    <div class="small-3 columns hide-for-small-only">
-        <a href="/"><img src="images/header%20(1).png" style="min-width: 180px;"/></a>
-    </div>
-    <div class="small-12 medium-9 columns end">
-        <div class="top-bar" style="background-color: transparent">
+        <div class="small-3 columns hide-for-small-only">
+            <a href="/"><img src="images/header%20(1).png" style="min-width: 180px;"/></a>
+        </div>
+        <div class="small-12 medium-9 columns end">
+            <div class="top-bar" style="background-color: transparent">
 
-            <!-- Mobile menu -->
-            <div class="top-bar-title" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-                <button class="menu-icon dark" type="button" data-toggle="responsive-menu"></button>
-                <strong style="padding-left: 18px">
-                    <a href="/"><img src="images/header%20(1).png" style="max-width: 140px"/></a>
-                </strong>
+                <!-- Mobile menu -->
+                <div class="top-bar-title" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                    <button class="menu-icon dark" type="button" data-toggle="responsive-menu"></button>
+                    <strong style="padding-left: 18px">
+                        <a href="/"><img src="images/header%20(1).png" style="max-width: 140px"/></a>
+                    </strong>
+                </div>
+
+                <div id="responsive-menu" style="padding-top: 14px">
+                    <div class="top-bar-left">
+                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
+                            <br class="hide-for-medium"/>
+                            <li><a class="hvr" href="/">Startseite</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="top-bar-left">
+                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
+                            <li class="active"><a class="hvr" href="products.html">Produkte</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="top-bar-left">
+                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
+                            <li><a class="hvr" href="/repair">Reparaturservice</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="top-bar-left">
+                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
+                            <li><a class="hvr" href="#">Referenzen</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="top-bar-left">
+                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
+                            <li><a class="hvr" style="white-space: nowrap;" href="#">Strobel GmbH</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="top-bar-left">
+                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
+                            <li><a class="hvr" href="#">Kontakt</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="top-bar-left">
+                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
+                            <li><a class="hvr" href="#">Impressum</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
-
-            <div id="responsive-menu" style="padding-top: 14px">
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <br class="hide-for-medium"/>
-                        <li><a class="hvr" href="/">Startseite</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li class="active"><a class="hvr" href="products.html">Produkte</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/repair">Reparaturservice</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="#">Referenzen</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" style="white-space: nowrap;" href="#">Strobel GmbH</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="#">Kontakt</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="#">Impressum</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
         </div>
     </div>
 </div>
 
-<br/>
-
-<div class="row show-for-small-only">
-    <div class="small-12 columns" style="text-align: center">
-        <ul class="vertical menu">
-            <li><a class="hvr" href="#">Fenster</a></li>
-            <li><a class="hvr" href="fragments/doors.html">Haustüren</a></li>
-            <li><a class="hvr" href="#">Vordächer</a></li>
-            <li><a class="hvr" href="#">Wintergärten</a></li>
-            <li><a class="hvr" href="#">Fassaden</a></li>
-        </ul>
+<!-- First parallax background -->
+<div class="bgimg-2">
+    <div class="caption2" style="position: fixed">
+        <span class="border">
+            <p style="text-align: center">In allen Bereichen werden wir höchsten Ansprüchen gerecht.</p>
+            <p style="text-align: center">Wir planen individuell und flexibel und bieten
+            Ihnen alle Möglichkeiten zum Thema Energieeffizienz, Sicherheit, Design und Wohnkomfort.</p>
+        </span>
     </div>
 </div>
 
-<br/>
+<!-- Fenster section -->
+<div style="position:relative;">
+    <div style="color: #0078A0; background-color: white; padding: 50px;">
+        <span class="border">
+        <p style="font-size: 40px; text-align: center">Fenster</p>
+             <hr/>
+        <p style="font-size: 20px; text-align: center">Qualität am Fenster von der Herstellung bis zur Montage.</p>
 
-<div class="medium-2 columns hide-for-small-only">
-    <ul class="menu vertical">
-        <li><a class="hvr" href="#">Fenster</a></li>
-        <li><a id="doors" class="hvr">Haustüren</a></li>
-        <li><a class="hvr" href="#">Vordächer</a></li>
-        <li><a class="hvr" href="#">Wintergärten</a></li>
-        <li><a class="hvr" href="#">Fassaden</a></li>
-    </ul>
-</div>
+        </span>
+        <br/>
+        <br/>
+        <div class="row" data-equalizer="" data-equalize-on="medium">
 
-<div class="small-12 medium-10 columns">
+            <div class="small-12 medium-6 large-4 columns small-centered medium-uncentered cards">
+                <div class="card">
+                    <div class="image">
+                        <img style="min-width: 100%" src="images/pr_fenster_kunststoff.jpg"/>
+                        <span class="title">Kunststoff Fenster</span>
+                    </div>
+                    <div class="content">
+                        <li>5-Kammer-System in verschiedenen Varianten</li>
+                        <li>hohe Steifigkeit</li>
+                        <li>sehr gute Wärmedämmwerte</li>
+                        <li>UW-Werte von bis zu 0,9 W/m2K möglich</li>
+                        <li>Hohe Schalldämmung bis 42 db</li>
+                        <li>Einbruchhemmende Elemente bis Widerstandsklasse 2</li>
+                    </div>
+                    <div class="action">
+                        <a href='#'>Link to somewhere</a>
+                    </div>
+                </div>
+            </div>
 
-    <div id="vordaecher" style="display:none;">Vordächern</div>
+            <div class="small-12 medium-6 large-4 columns small-centered medium-uncentered cards">
+                <div class="card">
+                    <div class="image">
+                        <img style="min-width: 100%" src="images/pr_fenster_holz.jpg"/>
+                        <span class="title">Holz Fenster</span>
+                    </div>
+                    <div class="content">
+                        <li>STROBEL-Systeme IV 68/71 und IV 78/81 in erstklassiger Optik</li>
+                        <li>Sehr stabile Massivholzausführung</li>
+                        <li>Extrem gute Wärmedämmwerte UW-Werte von bis zu 0,7 W/m2K</li>
+                        <li>Super-Schalldämmung bis 45 db</li>
+                        <li>Einbruch-Elemente bis Widerstandsklasse 3</li>
+                        <li>Ideales Raumklima</li>
+                        <li>Hoher Wohnkomfort</li>
+                    </div>
+                    <div class="action">
+                        <a href='#'>Link to somewhere</a>
+                    </div>
+                </div>
+            </div>
 
-    <div id="wintergaerten" style="display:none;">Winter.</div>
+            <div class="small-12 medium-6 large-4 columns small-centered medium-uncentered cards">
+                <div class="card">
+                    <div class="image">
+                        <img style="min-width: 100%" src="images/pr_fenster_holz-alu.jpg"/>
+                        <span class="title">Holz-Aluminium Fenster</span>
+                    </div>
+                    <div class="content">
+                        <li>STROBEL-Systeme HA/ IV 76/95 und HA/IV 86/105</li>
+                        <li>Äußere flächenbündige Konstruktionen</li>
+                        <li>Extrem gute Wärmedämmwerte UW-Werte von bis zu 0,7 W/m2K</li>
+                        <li>Super-Schalldämmung bis 45 db</li>
+                        <li>Einbruch-Elemente bis Widerstandsklasse 3</li>
+                        <li>Ideales Raumklima</li>
+                        <li>Hoher Wohnkomfort</li>
+                        <li>Oberflächenvielfalt durch RAL-Farben sowie Sondereffekte</li>
+                    </div>
+                    <div class="action">
+                        <a href='#'>Link to somewhere</a>
+                    </div>
+                </div>
+            </div>
 
-    <div id="fassaden" style="display:none;">This is fassaden.</div>
-</div>
+            <div class="small-12 medium-6 large-4 columns small-centered medium-uncentered cards">
+                <div class="card">
+                    <div class="image">
+                        <img style="min-width: 100%" src="images/pr_fenster_kunsstoff_03.jpg"/>
+                        <span class="title">Aluminium Fenster</span>
+                    </div>
+                    <div class="content">
+                        <li>Mehrkammer-Systeme sowie Pfosten-Riegel-Konstruktion in sehr vielen Varianten</li>
+                        <li>Besonders hohe Festigkeiten</li>
+                        <li>Sehr gute Wärmedämmwerte UW-Werte von bis zu 1,1 W/m2K</li>
+                        <li>Super-Schalldämmung bis 45 db</li>
+                        <li>Einbruch-Elemente bis Widerstandsklasse 3</li>
+                        <li>Äußere flächenbündige oder versetzte Ausführungen</li>
+                        <li>Ästhetik durch klare Linienführung</li>
+                        <li>Wartungsfreie Aluminium Profile</li>
+                    </div>
+                    <div class="action">
+                        <a href='#'>Link to somewhere</a>
+                    </div>
+                </div>
+            </div>
 
-<div id="box">
-    <div class="small-12 medium-9 end columns">
-        <div class="callout">
-            <h4>Produkte</h4>
-            Wir bieten Ihnen eine breite Produktpalette – neben unserem Schwerpunkt Fenster und Türen fertigen wir
-            individuelle Wintergärten, Vordächer und Fassadenelemente.
-            <p/>
-            <strong>Ihre Vorstellungen und Wünsche sind Maßstab unseres Handelns.</strong>
-            <p/>
-            In allen Bereichen werden wir höchsten Ansprüchen gerecht. Wir planen individuell und flexibel und bieten
-            Ihnen alle Möglichkeiten im Thema Energieeffizienz, Sicherheit, Design und Wohnkomfort.
+            <div class="small-12 medium-6 large-4 columns small-centered medium-uncentered end cards">
+                <div class="card">
+                    <div class="image">
+                        <img style="min-width: 100%" src="images/pr_fenster_holz-glas.jpg"/>
+                        <span class="title">Holz-Glas Fenster</span>
+                    </div>
+                    <div class="content">
+                        <li>STROBEL-Systeme in Holz oder Holz-Aluminium</li>
+                        <li>Flügel mit äußerem Stufenisolierglas</li>
+                        <li>Rahmenlose Glasoberflächen</li>
+                        <li>Absolut Pflege- und Wartungsfrei</li>
+                        <li>Sehr leicht zu reinigen</li>
+                        <li>Viel Glas und Licht durch schmale Flügelprofile</li>
+                        <li>Äußere Glasscheibe aus Sicherheitsglas</li>
+                        <li>Verschiedene Farben im Randbereich möglich</li>
+                    </div>
+                    <div class="action">
+                        <a href='#'>Link to somewhere</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</div>
+
+<!-- Second parallax background -->
+<div class="bgimg-1">
+    <div class="caption1">
+        <span class="border" style="background-color: white; font-size: 30px">
+            <p style="text-align: center">"Eine Hauseingangstüre ist mehr als nur ein Eingang.</p>
+            <p style="text-align: center">Sie ist die Visitenkarte eines Hauses."</p>
+        </span>
+    </div>
+</div>
+
+<!-- Tueren section -->
+<div style="position:relative;">
+    <div style="color: #0078A0; background-color: white; padding: 60px;">
+
+        <p style="font-size: 40px; text-align: center">Haustüren</p>
+        <hr/>
+        <br/>
+        <br/>
+
+        <div class="row">
+
+            <div class="small-12 medium-6 large-5 large-offset-1 columns">
+                <div class="orbit" role="region" aria-label="Haustüren" data-orbit="">
+                    <ul class="orbit-container">
+                        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
+                        </button>
+                        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                        <li class="is-active orbit-slide">
+                            <img class="orbit-image" src="images/pr_haustueren_03.jpg"/>
+                            <figcaption class="orbit-caption">Haustüre 1</figcaption>
+                        </li>
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="images/pr_haustueren_03.jpg"/>
+                            <figcaption class="orbit-caption">Haustüre 2</figcaption>
+                        </li>
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="images/pr_haustueren_03.jpg"/>
+                            <figcaption class="orbit-caption">Haustüre 3</figcaption>
+                        </li>
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="images/pr_haustueren_03.jpg"/>
+                            <figcaption class="orbit-caption">Haustüre 4</figcaption>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span
+                                class="show-for-sr">First slide details.</span><span
+                                class="show-for-sr">Current Slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="small-12 medium-6 large-5 end columns">
+                <div class="card">
+                    <div class="content">
+                        <p>
+                            Bei den Haustüren und Eingangsportalen spielt nicht nur die Ästhetik eine große Rolle,
+                            sondern eine Vielzahl technischer Funktionen. Sie muss optimale Sicherheit,
+                            Schutz vor Lärm, Wind und Wetter sowie Wärme- und Schalldämmung besitzen.
+                            Türen und Eingangsanlagen werden mit einem hohen Qualitätsniveau mit allen möglichen
+                            technischen Funktionen sowie ansprechendem Design von der Firma Strobel gefertigt.
+                        </p>
+                    </div>
+                    <div class="action">
+                        <a href='http://adeco.atbit.de/app/Configurator.asp?user=26596' target="_blank">
+                            Haustürkonfigurator <span class="fa fa-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Third parallax background -->
+<div class="bgimg-1">
+    <div class="caption1">
+        <span class="border" style="background-color: white; font-size: 30px">
+            <p style="text-align: center">Um den Hauseingangsbereich vor Wind und Wetter zu schützen <br/> ist ein Vordach
+                aus dem Hause STROBEL die optimale Lösung.
+            </p>
+        </span>
+    </div>
+</div>
+
+<div class="bgimg-3">
+    <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+    </div>
+</div>
+
+<div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    </div>
+</div>
+
+<div class="bgimg-1">
+    <div class="caption">
+        <span class="border">COOL!</span>
     </div>
 </div>
 
