@@ -3,12 +3,12 @@
 <head>
     <div th:replace="fragments/header"></div>
 </head>
-<body style="background-color: rgb(237,237,237)">
+<body>
 
 <!-- Navbar -->
 <div data-sticky-container="">
-    <div class="row sticky" data-sticky="" data-margin-top="" data-options="stickTo:top; stickyOn:small;"
-         style="background-color: rgb(237,237,237); min-width: 100%">
+    <div class="row sticky is-at-top is-stuck" data-sticky="" data-margin-top=""
+         data-options="stickTo:top; stickyOn:small;" style="background-color: white; min-width: 100%">
 
         <div class="small-3 columns hide-for-small-only">
             <a href="/"><img src="images/header%20(1).png" style="min-width: 180px;"/></a>
@@ -24,7 +24,7 @@
                     </strong>
                 </div>
 
-                <div id="responsive-menu" style="padding-top: 14px">
+                <div id="responsive-menu" style="padding-top: 14px; position:relative;">
                     <div class="top-bar-left">
                         <ul class="vertical medium-horizontal menu" style="background-color: transparent">
                             <br class="hide-for-medium"/>
@@ -80,7 +80,7 @@
     <div class="caption2" style="position: fixed">
         <span class="border">
             <h3 style="text-align: center; padding-top: 20px">In allen Bereichen werden wir höchsten Ansprüchen gerecht.</h3>
-            <h4 style="text-align: center">Wir planen individuell und flexibel und bieten
+            <h4 style="text-align: center; color: white">Wir planen individuell und flexibel und bieten
             Ihnen alle Möglichkeiten zum Thema Energieeffizienz, Sicherheit, Design und Wohnkomfort.</h4>
         </span>
     </div>
@@ -88,7 +88,7 @@
 
 <!-- Fenster section -->
 <div style="position:relative;">
-    <div style="color: #0078A0; background-color: white; padding: 50px;">
+    <div style="color: #0078A0; background-color: white; padding-top: 50px;">
         <span class="border">
         <p style="font-size: 40px; text-align: center">Fenster</p>
              <hr/>
@@ -206,22 +206,23 @@
                 </div>
             </div>
         </div>
+        <br/>
     </div>
 </div>
 
 <!-- Second parallax background -->
 <div class="bgimg-1">
     <div class="caption1">
-        <span class="border" style="background-color: white; font-size: 30px">
-            <p style="text-align: center">"Eine Hauseingangstüre ist mehr als nur ein Eingang.</p>
-            <p style="text-align: center">Sie ist die Visitenkarte eines Hauses."</p>
+        <span class="border" style="background-color: white">
+            <h3 style="text-align: center; padding-top: 20px">Eine Hauseingangstüre ist mehr als nur ein Eingang.</h3>
+            <h3 style="text-align: center">Sie ist die Visitenkarte eines Hauses.</h3>
         </span>
     </div>
 </div>
 
 <!-- Tueren section -->
 <div style="position:relative;">
-    <div style="color: #0078A0; background-color: white; padding: 60px;">
+    <div style="color: #0078A0; background-color: white; padding-top: 50px;">
 
         <p style="font-size: 40px; text-align: center">Haustüren</p>
         <hr/>
@@ -283,16 +284,16 @@
                 </div>
             </div>
         </div>
+        <br/>
     </div>
 </div>
 
 <!-- Third parallax background -->
 <div class="bgimg-1">
     <div class="caption1">
-        <span class="border" style="background-color: white; font-size: 30px">
-            <p style="text-align: center">Um den Hauseingangsbereich vor Wind und Wetter zu schützen <br/> ist ein Vordach
-                aus dem Hause STROBEL die optimale Lösung.
-            </p>
+        <span class="border" style="background-color: white">
+            <h3 style="text-align: center; padding-top: 20px">Um den Hauseingangsbereich vor Wind und Wetter zu schützen
+                ist ein Vordach aus dem Hause STROBEL die optimale Lösung.</h3>
         </span>
     </div>
 </div>
@@ -309,26 +310,26 @@
         <div class="row">
 
             <div class="small-12 medium-6 large-5 large-offset-1 columns">
-                <div class="orbit" role="region" aria-label="Haustüren" data-orbit="">
+                <div class="orbit" role="region" aria-label="Vordaecher" data-orbit="">
                     <ul class="orbit-container">
                         <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
                         </button>
                         <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
                         <li class="is-active orbit-slide">
-                            <img class="orbit-image" src="images/pr_haustueren_03.jpg"/>
-                            <figcaption class="orbit-caption">Haustüre 1</figcaption>
+                            <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                            <figcaption class="orbit-caption">Vordach 1</figcaption>
                         </li>
                         <li class="orbit-slide">
-                            <img class="orbit-image" src="images/pr_haustueren_03.jpg"/>
-                            <figcaption class="orbit-caption">Haustüre 2</figcaption>
+                            <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                            <figcaption class="orbit-caption">Vordach 2</figcaption>
                         </li>
                         <li class="orbit-slide">
-                            <img class="orbit-image" src="images/pr_haustueren_03.jpg"/>
-                            <figcaption class="orbit-caption">Haustüre 3</figcaption>
+                            <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                            <figcaption class="orbit-caption">Vordach 3</figcaption>
                         </li>
                         <li class="orbit-slide">
-                            <img class="orbit-image" src="images/pr_haustueren_03.jpg"/>
-                            <figcaption class="orbit-caption">Haustüre 4</figcaption>
+                            <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                            <figcaption class="orbit-caption">Vordach 4</figcaption>
                         </li>
                     </ul>
                     <nav class="orbit-bullets">
@@ -346,17 +347,11 @@
                 <div class="card">
                     <div class="content">
                         <p>
-                            Bei den Haustüren und Eingangsportalen spielt nicht nur die Ästhetik eine große Rolle,
-                            sondern eine Vielzahl technischer Funktionen. Sie muss optimale Sicherheit,
-                            Schutz vor Lärm, Wind und Wetter sowie Wärme- und Schalldämmung besitzen.
-                            Türen und Eingangsanlagen werden mit einem hohen Qualitätsniveau mit allen möglichen
-                            technischen Funktionen sowie ansprechendem Design von der Firma Strobel gefertigt.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <a href='http://adeco.atbit.de/app/Configurator.asp?user=26596' target="_blank">
-                            Haustürkonfigurator <span class="fa fa-chevron-right"></span>
-                        </a>
+                            Bei der Wahl des Materials, der Farbe und der Konstruktion achten wir auf harmonisches und
+                            stilgerechtes Einbinden des Vordaches in die Fassade und den Eingangsbereich. Durch unser
+                            qualifiziertes Strobel-Team können wir eine optimale Planung, Fertigung und Montage
+                            gewährleisten.</p>
+                        <p>Überzeugen Sie sich selbst.</p>
                     </div>
                 </div>
             </div>
