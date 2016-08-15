@@ -30,12 +30,13 @@ a.footer {
 }
 
 a.footer:hover {
-    color: #0078A0;
+    color: rgb(210, 210, 220);
 }
 
 a.call {
     color: white;
 }
+
 a.call:hover {
 
     color: limegreen;
@@ -55,12 +56,13 @@ h4 {
     color: white;
 }
 
-/* Cards for the product page */
+/* Cards */
 .card {
     overflow: hidden;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     color: #272727;
     border-radius: 2px;
+    background-color: white;
 }
 
 .card .title {
@@ -86,9 +88,13 @@ h4 {
 }
 
 .card a {
+    color: #333;
     margin-right: 1.3rem;
-    transition: color 0.3s ease;
     text-decoration: none;
+}
+
+.card a:hover {
+    color: #0078A0;
 }
 
 .card .image {
@@ -180,48 +186,16 @@ h4 {
     }
 }
 
-.bgimg-1, .bgimg-2{
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
 .bgimg-1 {
-    background-image: linear-gradient(to bottom, white, #0078A0);
-    min-height: 700px;
+    height: 200px;
 }
 
-.bgimg-2 {
-    background-image: linear-gradient(to bottom, #0078A0, #8ADBD7);
-    min-height: 50%;
+/* Magellan */
+[data-magellan] a {
+    color: #333;
 }
 
-.caption1 {
-    padding-top: 10%;
-    position: absolute;
-    left: 0;
-    top: 16%;
-    width: 100%;
-    text-align: center;
-}
-
-.caption2 {
-    padding-top: 10%;
-    position: absolute;
-    left: 0;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-}
-
-.caption1 span.border {
+[data-magellan] a.active, [data-magellan] a.active:focus {
+    background: #0078A0;
     color: white;
-    font-size: 26px;
-}
-
-.caption2 span.border {
-    color: white;
-    font-size: 26px;
 }
