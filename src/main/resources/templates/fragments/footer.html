@@ -2,27 +2,37 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <th:block th:fragment="footer">
 
-    <div class="row" id="footer" style="background-color: rgba(0, 0, 0, 0.9); padding: 10px">
+    <div class="row" id="footer" style="background-color: rgba(50, 50, 50, 0.95); padding: 10px">
 
-        <!-- Footer for medium-sized displays -->
-    <span class="small-6 columns hide-for-small-only">
-        <a style="color: white" href="https://goo.gl/maps/AzuADWxLYGm" target="_blank">Schützenstraße 11 <span
-                class="show-for-large">・</span><br class="show-for-medium-only"/> 71634 Ludwigsburg
-        </a>
-    </span>
+        <!-- Section left for medium-sized displays -->
+        <div class="small-5 columns hide-for-small-only">
+            <a class="footer" href="https://goo.gl/maps/AzuADWxLYGm" target="_blank">Schützenstraße 11 <span
+                    class="show-for-large">・</span><br class="show-for-medium-only"/> 71634 Ludwigsburg
+            </a>
+        </div>
 
-    <span class="small-6 columns hide-for-small-only" style="text-align: right; color: white">
-        <a style="color: white;" href="tel:+49714196120">Tel.: (0 71 41) 96 120</a><span
-            class="show-for-large"> ・</span><br class="show-for-medium-only"/> Fax: (0 71 41) 9 00 68
-    </span>
+        <!-- Section left for small-sized displays -->
+        <div class="small-5 columns show-for-small-only">
+            <a class="footer" href="https://goo.gl/maps/AzuADWxLYGm" target="_blank">
+                <i class="fa fa-map-marker"></i>&nbsp; Adresse</a>
+        </div>
 
-        <!-- Footer for small-sized displays -->
-    <span class="small-6 columns show-for-small-only">
-        <a style="color: white" href="https://goo.gl/maps/AzuADWxLYGm" target="_blank"><i class="fa fa-map-marker"></i>&nbsp; Adresse</a>
-    </span>
+        <!-- Middle section -->
+        <div class="small-2 columns text-center">
+            <a class="footer" href="#" target="_blank">Impressum</a>
+        </div>
 
-    <span class="small-6 columns show-for-small-only" style="text-align: right; color: white">
-        <a style="color: white;" href="tel:+49714196120"><i class="fa fa-phone"></i>&nbsp; Anrufen</a></span>
+        <!-- Section right for small-sized displays -->
+        <div class="small-5 columns show-for-small-only" style="text-align: right; color: white">
+            <a class="call" href="tel:+49714196120"><i class="fa fa-phone"></i>&nbsp; Anrufen</a>
+        </div>
+
+        <!-- Section right for medium-sized displays -->
+        <div class="small-5 columns hide-for-small-only" style="text-align: right; color: white">
+            <a class="call" href="tel:+49714196120">Tel.: (0 71 41) 96 120</a>
+            <span class="show-for-large"> ・</span><br class="show-for-medium-only"/> Fax: (0 71 41) 9 00 68
+        </div>
+
     </div>
 
 </th:block>
