@@ -20,7 +20,7 @@
     min-width: 100%;
 }
 
-/* Link color */
+/* Link colors */
 a {
     color: #0078A0;
 }
@@ -46,14 +46,15 @@ h4 {
     color: #0078A0;
 }
 
-.dropMenu a {
-    color: white;
-}
-
-/* Hover effect for navbar */
+/* Hover effect */
 .hvr:hover {
     background-color: #0078A0;
     color: white;
+}
+
+.productButton {
+    padding-top: 10px;
+    text-align: center;
 }
 
 /* Cards */
@@ -231,9 +232,10 @@ h4 {
 }
 
 .overlay-fade-in .image-overlay-content {
+    padding: 10px;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    transition: all 0.4s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
 }
 
 .overlay-fade-in h2 {
