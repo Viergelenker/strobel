@@ -79,7 +79,7 @@
     <br/>
     <a class="button large expanded" href="/products">Produkte</a>
     <br/>
-    <a class="button large expanded hollow" href="/">Reparaturservice</a>
+    <a class="button large expanded hollow" href="/repair">Reparaturservice</a>
     <br/>
     <a class="button large expanded hollow" href="/">Referenzen</a>
     <br/>
@@ -88,8 +88,9 @@
     <a class="button large expanded hollow" href="/">Kontakt</a>
 </div>
 
-<!-- Left side menu with "magellan" scrolling effect -->
 <div class="row" id="foo">
+
+    <!-- Left side menu with "magellan" scrolling effect -->
     <div class="medium-2 columns show-for-medium" data-sticky-container="">
         <div class="sticky" data-sticky="" data-anchor="foo">
             <ul class="menu vertical" data-magellan="" style="padding-top: 100px">
@@ -97,6 +98,7 @@
                 <li><a href="#mag2">Haustüren</a></li>
                 <li><a href="#mag3">Vordächer</a></li>
                 <li><a href="#mag4">Wintergärten</a></li>
+                <li><a href="#mag5">Fassaden</a></li>
             </ul>
         </div>
     </div>
@@ -105,8 +107,7 @@
 
         <!-- Fenster section -->
         <section id="mag1" data-magellan-target="mag1">
-            <div style="color: #0078A0;  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-            padding: 10px">
+            <div class="productOverview">
                 <p style="font-size: 40px; text-align: center">Fenster</p>
                 <hr/>
                 <p style="font-size: 20px; text-align: center">Qualität am Fenster von der Herstellung bis zur
@@ -237,12 +238,11 @@
 
         <!-- Tueren section -->
         <section id="mag2" data-magellan-target="mag2">
-            <div style="color: white; padding: 50px; background-color: #0078A0; box-shadow: 6px 6px 6px #888888">
-
+            <div class="productOverview">
                 <p style="font-size: 40px; text-align: center">Haustüren</p>
+                <hr/>
                 <p style="font-size: 20px; text-align: center">Eine Hauseingangstüre ist mehr als nur ein Eingang.</p>
                 <p style="font-size: 20px; text-align: center">Sie ist die Visitenkarte eines Hauses.</p>
-                <div style="border-bottom: solid thin #333"></div>
                 <br/>
                 <br/>
 
@@ -312,80 +312,73 @@
             </div>
         </section>
 
-        <!-- Third parallax background -->
-        <div class="bgimg-1">
-            <div class="caption1">
-                <h3 style="text-align: center; padding-top: 20px">Um den Hauseingangsbereich vor Wind und Wetter zu
-                    schützen
-                    ist ein Vordach aus dem Hause STROBEL die optimale Lösung.</h3>
-            </div>
-        </div>
+        <!-- Placeholder -->
+        <div class="bgimg-1"></div>
 
+        <!-- Vordaecher section -->
         <section id="mag3" data-magellan-target="mag3">
-            <!-- Vordaecher section -->
-            <div style="position:relative;">
-                <div style="color: #0078A0; background-color: white; padding: 60px;">
+            <div class="productOverview">
+                <p style="font-size: 40px; text-align: center">Vordächer</p>
+                <hr/>
+                <p style="font-size: 20px; text-align: center">Um den Hauseingangsbereich vor Wind und Wetter zu
+                    schützen ist ein Vordach aus dem Hause STROBEL die optimale Lösung.</p>
+                <br/>
+                <br/>
 
-                    <p style="font-size: 40px; text-align: center">Vordächer</p>
-                    <hr/>
-                    <br/>
-                    <br/>
+                <div class="row">
 
-                    <div class="row">
-
-                        <div class="small-12 medium-6 large-5 large-offset-1 columns">
-                            <div class="orbit" role="region" aria-label="Vordaecher" data-orbit="">
-                                <ul class="orbit-container">
-                                    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
-                                    </button>
-                                    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
-                                    </button>
-                                    <li class="is-active orbit-slide">
-                                        <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
-                                        <figcaption class="orbit-caption">Vordach 1</figcaption>
-                                    </li>
-                                    <li class="orbit-slide">
-                                        <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
-                                        <figcaption class="orbit-caption">Vordach 2</figcaption>
-                                    </li>
-                                    <li class="orbit-slide">
-                                        <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
-                                        <figcaption class="orbit-caption">Vordach 3</figcaption>
-                                    </li>
-                                    <li class="orbit-slide">
-                                        <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
-                                        <figcaption class="orbit-caption">Vordach 4</figcaption>
-                                    </li>
-                                </ul>
-                                <nav class="orbit-bullets">
-                                    <button class="is-active" data-slide="0"><span
-                                            class="show-for-sr">First slide details.</span><span
-                                            class="show-for-sr">Current Slide</span></button>
-                                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span>
-                                    </button>
-                                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span>
-                                    </button>
-                                    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span>
-                                    </button>
-                                </nav>
-                            </div>
+                    <div class="small-12 medium-6 large-5 large-offset-1 columns">
+                        <div class="orbit" role="region" aria-label="Vordaecher" data-orbit="">
+                            <ul class="orbit-container">
+                                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
+                                </button>
+                                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
+                                </button>
+                                <li class="is-active orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 1</figcaption>
+                                </li>
+                                <li class="orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 2</figcaption>
+                                </li>
+                                <li class="orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 3</figcaption>
+                                </li>
+                                <li class="orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 4</figcaption>
+                                </li>
+                            </ul>
+                            <nav class="orbit-bullets">
+                                <button class="is-active" data-slide="0"><span
+                                        class="show-for-sr">First slide details.</span><span
+                                        class="show-for-sr">Current Slide</span></button>
+                                <button data-slide="1"><span class="show-for-sr">Second slide details.</span>
+                                </button>
+                                <button data-slide="2"><span class="show-for-sr">Third slide details.</span>
+                                </button>
+                                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span>
+                                </button>
+                            </nav>
                         </div>
+                    </div>
 
-                        <div class="small-12 medium-6 large-5 end columns">
-                            <div class="card">
-                                <div class="content">
-                                    <p>
-                                        Bei der Wahl des Materials, der Farbe und der Konstruktion achten wir auf
-                                        harmonisches
-                                        und
-                                        stilgerechtes Einbinden des Vordaches in die Fassade und den Eingangsbereich.
-                                        Durch
-                                        unser
-                                        qualifiziertes Strobel-Team können wir eine optimale Planung, Fertigung und
-                                        Montage
-                                        gewährleisten.</p>
-                                    <p>Überzeugen Sie sich selbst.</p>
-                                </div>
+                    <div class="small-12 medium-6 large-5 end columns">
+                        <div class="card">
+                            <div class="content">
+                                <p>
+                                    Bei der Wahl des Materials, der Farbe und der Konstruktion achten wir auf
+                                    harmonisches
+                                    und
+                                    stilgerechtes Einbinden des Vordaches in die Fassade und den Eingangsbereich.
+                                    Durch
+                                    unser
+                                    qualifiziertes Strobel-Team können wir eine optimale Planung, Fertigung und
+                                    Montage
+                                    gewährleisten.</p>
+                                <p>Überzeugen Sie sich selbst.</p>
                             </div>
                         </div>
                     </div>
@@ -393,23 +386,158 @@
             </div>
         </section>
 
-        <!-- Fourth parallax background -->
-        <div class="bgimg-1">
-            <div class="caption1">
-                <h3 style="text-align: center; padding-top: 20px">
-                    Um den Wohnkomfort zu steigern, sowie Wohnraum zu schaffen, ist ein Wintergarten aus unserer
-                    Produktion
-                    eine
-                    optimale Lösung.
-                </h3>
+        <!-- Placeholder -->
+        <div class="bgimg-1"></div>
+
+        <!-- Wintergaerten section -->
+        <section id="mag4" data-magellan-target="mag4">
+            <div class="productOverview">
+                <p style="font-size: 40px; text-align: center">Wintergärten</p>
+                <hr/>
+                <p style="font-size: 20px; text-align: center">Um den Wohnkomfort zu steigern, sowie Wohnraum zu
+                    schaffen, ist ein Wintergarten aus unserer Produktion eine optimale Lösung.</p>
+                <br/>
+                <br/>
+
+                <div class="row">
+
+                    <div class="small-12 medium-6 large-5 large-offset-1 columns">
+                        <div class="orbit" role="region" aria-label="Vordaecher" data-orbit="">
+                            <ul class="orbit-container">
+                                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
+                                </button>
+                                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
+                                </button>
+                                <li class="is-active orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 1</figcaption>
+                                </li>
+                                <li class="orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 2</figcaption>
+                                </li>
+                                <li class="orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 3</figcaption>
+                                </li>
+                                <li class="orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 4</figcaption>
+                                </li>
+                            </ul>
+                            <nav class="orbit-bullets">
+                                <button class="is-active" data-slide="0"><span
+                                        class="show-for-sr">First slide details.</span><span
+                                        class="show-for-sr">Current Slide</span></button>
+                                <button data-slide="1"><span class="show-for-sr">Second slide details.</span>
+                                </button>
+                                <button data-slide="2"><span class="show-for-sr">Third slide details.</span>
+                                </button>
+                                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span>
+                                </button>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="small-12 medium-6 large-5 end columns">
+                        <div class="card">
+                            <div class="content">
+                                <p>Bei der Planung und Ausführung wird nicht nur Wert auf optimales Design und Aussehen
+                                    gelegt, sondern auch auf die funktionale Nutzung. Um ein optimales Wohnklima im
+                                    Sommer wie auch im Winter zu schaffen, benötigt man ein sehr breit gefächertes
+                                    Fachwissen. Dieses Wissen erlangen unsere Techniker, Meister und Facharbeiter durch
+                                    ständiges schulen und weiterbilden. Durch diesen Vorsprung an Wissen, können wir
+                                    verschiedene Konstruktionen mit den unterschiedlichsten Materialien planen und
+                                    herstellen. Um nichts dem Zufall zu überlassen, werden vor der Fertigung
+                                    CAD-Zeichnungen erstellt und mit den Bauherren und Planern durchgesprochen.
+                                    Bei der Auswahl der Konstruktion, der Gläser, der Beschattungen sowie der
+                                    kontrollierten Be- und Entlüftung stehen Ihnen optimale Referenzobjekte und unser
+                                    Ausstellungsraum zur Verfügung.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Placeholder -->
+        <div class="bgimg-1"></div>
+
+        <!-- Fassaden section -->
+        <section id="mag5" data-magellan-target="mag5">
+            <div class="productOverview">
+                <p style="font-size: 40px; text-align: center">Fassaden</p>
+                <hr/>
+                <p style="font-size: 20px; text-align: center">Oft sind es nur kleine Feinheiten, die den Reiz einer
+                    schönen Optik ausmachen.</p>
+                <br/>
+                <br/>
+
+                <div class="row">
+
+                    <div class="small-12 medium-6 large-5 large-offset-1 columns">
+                        <div class="orbit" role="region" aria-label="Vordaecher" data-orbit="">
+                            <ul class="orbit-container">
+                                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
+                                </button>
+                                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
+                                </button>
+                                <li class="is-active orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 1</figcaption>
+                                </li>
+                                <li class="orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 2</figcaption>
+                                </li>
+                                <li class="orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 3</figcaption>
+                                </li>
+                                <li class="orbit-slide">
+                                    <img class="orbit-image" src="images/pr_vordaecher_01.jpg"/>
+                                    <figcaption class="orbit-caption">Vordach 4</figcaption>
+                                </li>
+                            </ul>
+                            <nav class="orbit-bullets">
+                                <button class="is-active" data-slide="0"><span
+                                        class="show-for-sr">First slide details.</span><span
+                                        class="show-for-sr">Current Slide</span></button>
+                                <button data-slide="1"><span class="show-for-sr">Second slide details.</span>
+                                </button>
+                                <button data-slide="2"><span class="show-for-sr">Third slide details.</span>
+                                </button>
+                                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span>
+                                </button>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="small-12 medium-6 large-5 end columns">
+                        <div class="card">
+                            <div class="content">
+                                <p>In der heutigen Zeit ist es sehr wichtig, bei der Planung und Ausführung einer
+                                    Fassade die richtigen Materialien miteinander abzustimmen, so dass sie einen
+                                    reizvollen Kontrast im Gebäude sowie in der Landschaft bilden.</p>
+                                <p>Wir bieten eine große Auswahl an verschiedenen Systemen, Gläsern und Konstruktionen,
+                                    die bei höchster Funktionalität die ideale Lösung für jedes Gebäude und jeden
+                                    Geschmack darstellen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="row">
-            <br/>
+            <!-- Placeholder -->
+            <div class="bgimg-1"></div>
         </div>
     </div>
 </div>
+
+<!-- Back to top button -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
 <div th:replace="fragments/footer"></div>
 

@@ -5,7 +5,8 @@
 </head>
 <body>
 
-<div class="row" style="background-color: white; min-width: 100%">
+<!-- Navbar -->
+<div class="row" style="background-color: white; min-width: 100%;">
 
     <div class="small-3 columns hide-for-small-only">
         <a href="/"><img src="images/header%20(1).png" style="min-width: 180px;"/></a>
@@ -13,15 +14,15 @@
     <div class="small-12 medium-9 columns end">
         <div class="top-bar" style="background-color: transparent">
 
-            <!-- Mobile menu -->
+            <!-- Triggers the mobile menu -->
             <div class="top-bar-title" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-                <button class="menu-icon dark" type="button" data-toggle="responsive-menu"></button>
+                <a class="menu-icon dark" type="button" data-open="modal1"></a>
                 <strong style="padding-left: 18px">
                     <a href="/"><img src="images/header%20(1).png" style="max-width: 140px"/></a>
                 </strong>
             </div>
 
-            <div id="responsive-menu" style="padding-top: 14px">
+            <div class="hide-for-small-only" style="padding-top: 14px;">
                 <div class="top-bar-left">
                     <ul class="vertical medium-horizontal menu" style="background-color: transparent">
                         <br class="hide-for-medium"/>
@@ -59,12 +60,6 @@
                     </ul>
                 </div>
 
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="#">Impressum</a></li>
-                    </ul>
-                </div>
-
             </div>
 
         </div>
@@ -73,7 +68,27 @@
 
 <br/>
 
-<div class="small-12 medium-6 large-5 large-offset-1 columns">
+<!-- Menu for mobile -->
+<div class="reveal" id="modal1" data-reveal="" style="background-color: #333">
+    <button class="close-button" data-close="" aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h1 style="color: white">Menü</h1>
+    <hr/>
+    <a class="button large expanded hollow" href="/">Startseite</a>
+    <br/>
+    <a class="button large expanded hollow" href="/products">Produkte</a>
+    <br/>
+    <a class="button large expanded" href="/repair">Reparaturservice</a>
+    <br/>
+    <a class="button large expanded hollow" href="/">Referenzen</a>
+    <br/>
+    <a class="button large expanded hollow" href="/">Strobel GmbH</a>
+    <br/>
+    <a class="button large expanded hollow" href="/">Kontakt</a>
+</div>
+
+<div class="small-12 medium-6 large-5 large-offset-1 columns" style="padding-bottom: 30px">
     <div class="card">
         <div class="content">
             <h4>SCHERBEN?</h4>
@@ -84,8 +99,8 @@
             bis zu den Beschlägen.
             Durch unser großes Glaslager und unsere eigene Glasschleiferei ersetzen wir außer Fenster auch Spiegel,
             Glasplatten, Glasschiebetüren und Spezialverglasungen.
-            <p/>
-            <b>Das verstehen wir unter Service.</b>
+
+            <p><b>Das verstehen wir unter Service.</b></p>
         </div>
         <div class="action">
             <a href='#'>Kontakt aufnehmen</a>
@@ -128,8 +143,8 @@
 </div>
 
 <div class="row">
-    <br/>
-    <br/>
+    <!-- Placeholder -->
+    <div class="bgimg-1"></div>
 </div>
 
 <div th:replace="fragments/footer"></div>

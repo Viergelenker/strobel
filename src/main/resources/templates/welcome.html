@@ -14,15 +14,15 @@
     <div class="small-12 medium-9 columns end">
         <div class="top-bar" style="background-color: transparent">
 
-            <!-- Mobile menu -->
+            <!-- Triggers the mobile menu -->
             <div class="top-bar-title" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-                <button class="menu-icon dark" type="button" data-toggle="responsive-menu"></button>
+                <a class="menu-icon dark" type="button" data-open="modal1"></a>
                 <strong style="padding-left: 18px">
                     <a href="/"><img src="images/header%20(1).png" style="max-width: 140px"/></a>
                 </strong>
             </div>
 
-            <div id="responsive-menu" style="padding-top: 14px;">
+            <div class="hide-for-small-only" style="padding-top: 14px;">
                 <div class="top-bar-left">
                     <ul class="vertical medium-horizontal menu" style="background-color: transparent">
                         <br class="hide-for-medium"/>
@@ -67,6 +67,26 @@
 </div>
 
 <br/>
+
+<!-- Menu for mobile -->
+<div class="reveal" id="modal1" data-reveal="" style="background-color: #333">
+    <button class="close-button" data-close="" aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h1 style="color: white">Menü</h1>
+    <hr/>
+    <a class="button large expanded" href="/">Startseite</a>
+    <br/>
+    <a class="button large expanded hollow" href="/products">Produkte</a>
+    <br/>
+    <a class="button large expanded hollow" href="/repair">Reparaturservice</a>
+    <br/>
+    <a class="button large expanded hollow" href="/">Referenzen</a>
+    <br/>
+    <a class="button large expanded hollow" href="/">Strobel GmbH</a>
+    <br/>
+    <a class="button large expanded hollow" href="/">Kontakt</a>
+</div>
 
 <div class="row">
 
@@ -131,8 +151,8 @@
 </div>
 
 <div class="row">
-    <br/>
-    <br/>
+    <!-- Placeholder -->
+    <div class="bgimg-60"></div>
 </div>
 
 <!-- Footer -->
