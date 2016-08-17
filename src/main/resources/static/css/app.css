@@ -232,7 +232,7 @@ h4 {
 /* Return to top Button styling */
 #return-to-top {
     position: fixed;
-    bottom: 58px;
+    bottom: 70px;
     right: 20px;
     background-color: rgba(50, 50, 50, 0.95);
     width: 50px;
@@ -270,4 +270,10 @@ h4 {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+
+/* Carousel button color */
+.slick-prev:before, .slick-next:before {
+    color: black !important;
 }
