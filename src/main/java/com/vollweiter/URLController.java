@@ -24,8 +24,8 @@ public class URLController {
         return "repair";
     }
 
-    @RequestMapping("/ajax/doors")
-    public String haustueren() {
-        return "fragments/doors";
+    @RequestMapping("/company")
+    public String company() {
+        return "company";
     }
 }
