@@ -58,19 +58,7 @@ h4 {
     color: white;
 }
 
-/* Company page menu bar */
-.menuRow {
-    background-color: #17CFB9;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-.menubar li a {
-    color: white;
-}
-
-.menubar li a:hover {
-    color: #0078A0;
-}
-
+/* Button at the product page beneath every window */
 .productButton {
     padding-top: 10px;
     text-align: center;
@@ -143,6 +131,38 @@ h4 {
 .cards {
     padding-bottom: 30px;
     min-width: 270px;
+}
+
+/* Company site submenu tabs */
+.tabRow {
+    background-color: #17CFB9;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+}
+.tabs {
+    background-color: #17CFB9;
+    border: none;
+    padding: 0;
+}
+
+ul.tabs li a {
+    padding-top: 17px;
+    font-size: 100%;
+}
+
+ul.tabs li.is-active a {
+    color: #0078A0 !important;
+    background-color: transparent !important;
+}
+
+.tabs-title a {
+    color: white;
+    padding: 14px;
+}
+
+.tabs-title a:hover {
+    color: #0078A0;
+    background-color: transparent;
 }
 
 /* Carousel button color */

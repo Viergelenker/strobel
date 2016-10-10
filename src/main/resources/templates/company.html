@@ -85,56 +85,44 @@
 </div>
 
 <!-- Submenu -->
-<div class="row menuRow">
-    <div class="menu-centered">
-        <ul class="menu menubar">
-            <li><a href="#">Büro</a></li>
-            <li><a href="#">Werkstatt</a></li>
-            <li><a href="#">Montage</a></li>
-            <li><a href="#">Reparatur-Service</a></li>
-            <li><a href="#">Ausbildung</a></li>
-        </ul>
-    </div>
+<div class="row tabRow menu-centered">
+    <ul class="tabs menu" data-tabs="" id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Büro</a>
+        </li>
+        <li class="tabs-title"><a href="#panel2">Werkstatt</a></li>
+        <li class="tabs-title"><a href="#panel2">Montage</a></li>
+        <li class="tabs-title"><a href="#panel2">Reparatur</a></li>
+        <li class="tabs-title"><a href="#panel2">Ausbildung</a></li>
+    </ul>
 </div>
 
 <br/>
-<br/>
-<br/>
 
-<ul class="tabs" data-tabs="" id="example-tabs">
-    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-    <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
-</ul>
-
-<div class="tabs-content" data-tabs-content="example-tabs">
+<div class="tabs-content" data-tabs-content="example-tabs" style="border-bottom: none">
     <div class="tabs-panel is-active" id="panel1">
-        <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        <div class="small-12 medium-6 large-5 large-offset-1 columns" style="padding-bottom: 30px">
+            <div class="card">
+                <div class="content">
+                    Die Firma Strobel wurde im Jahre 1931 von Glasermeister Gustav STROBEL gegründet und von seinem Sohn
+                    Glasermeister Kurt Strobel von 1950 bis 1995 geführt. Seitdem führt Jörg Strobel, Glasermeister und
+                    Betriebswirt des Handwerks, erfolgreich die Firma. Seit 2014 gehört die vierte Generation mit Laura
+                    Strobel
+                    zur Geschäftsführung.
+                </div>
+                <div class="action">
+                    <a href='#'>Kontakt</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-12 medium-6 large-5 columns">
+            <img class="thumbnail" src="images/strobel_gmbh_01.jpg"/>
+        </div>
     </div>
     <div class="tabs-panel" id="panel2">
-        <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-    </div>
-</div>
-
-<br/>
-
-<div class="small-12 medium-6 large-5 large-offset-1 columns" style="padding-bottom: 30px">
-    <div class="card">
-        <div class="content">
-            Die Firma Strobel wurde im Jahre 1931 von Glasermeister Gustav STROBEL gegründet und von seinem Sohn
-            Glasermeister Kurt Strobel von 1950 bis 1995 geführt. Seitdem führt Jörg Strobel, Glasermeister und
-            Betriebswirt des Handwerks, erfolgreich die Firma. Seit 2014 gehört die vierte Generation mit Laura Strobel
-            zur Geschäftsführung.
-        </div>
-        <div class="action">
-            <a href='#'>Kontakt</a>
-        </div>
-    </div>
-</div>
-
-<div class="small-12 medium-6 large-5 columns" data-sticky-container="">
-    <div class="sticky" data-sticky="" data-margin-top="0">
-        <img class="thumbnail" src="images/strobel_gmbh_01.jpg"/>
-        <!-- This sticky element would stick to the window, with a marginTop of 0 -->
+        <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla
+            enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu tellus
+            rhoncus ut eleifend nibh porttitor.</p>
     </div>
 </div>
 
@@ -142,6 +130,9 @@
     <!-- Placeholder -->
     <div class="bgimg-1"></div>
 </div>
+
+<br/>
+<br/>
 
 <div th:replace="fragments/footer"></div>
 
