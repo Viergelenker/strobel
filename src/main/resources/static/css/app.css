@@ -63,6 +63,20 @@ h4 {
     color: white;
 }
 
+/* Div at the contact page */
+.wrapper {
+    padding: 20px;
+    background-color: rgba(10, 130, 170, 0.7);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: white;
+}
+.wrapper p a {
+    color: white;
+}
+.wrapper p a:hover {
+    text-shadow: 1.5px 1.5px black;
+}
+
 /* Button at the product page beneath every window */
 .productButton {
     padding-top: 10px;

@@ -1,9 +1,10 @@
 <!doctype html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      style="background: url('images/contact.jpg') no-repeat center center fixed; background-size: cover">
 <head>
     <div th:replace="fragments/header"></div>
 </head>
-<body>
+<body style="background: transparent">
 
 <!-- Navbar -->
 <div class="row" style="background-color: white; min-width: 100%;">
@@ -44,12 +45,6 @@
 
                 <div class="top-bar-left">
                     <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="#">Referenzen</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
                         <li><a class="hvr" style="white-space: nowrap;" href="/company">Strobel GmbH</a></li>
                     </ul>
                 </div>
@@ -78,13 +73,25 @@
     <a class="button expanded hollow" href="/">Startseite</a>
     <a class="button expanded hollow" href="/products">Produkte</a>
     <a class="button expanded hollow" href="/repair">Reparaturservice</a>
-    <a class="button expanded hollow" href="/">Referenzen</a>
     <a class="button expanded hollow" href="/company">Strobel GmbH</a>
     <a class="button expanded" href="/contact">Kontakt</a>
-    <a class="button expanded hollow" href="/">Impressum</a>
+    <a class="button expanded hollow" href="/about">Impressum</a>
 </div>
 
-Kontakt
+<br/>
+<br/>
+<div class="row">
+    <div class="wrapper small-11 medium-8 large-5 small-centered columns">
+        <p><b>Öffnungszeiten Büro:</b></p>
+
+        <p>Montag bis Donnerstag 8 bis 12 Uhr und 13 bis 17 Uhr</p>
+        <p>Freitag 8 bis 12 Uhr und 13 bis 14.30 Uhr</p>
+
+        <p><a href="mailto:info@strobel-lb.de">info@strobel-lb.de</a></p>
+
+        <p><a href="tel:+49714196120">Tel.: 07141 96 120</a></p>
+    </div>
+</div>
 
 <div class="row">
     <!-- Placeholder -->
