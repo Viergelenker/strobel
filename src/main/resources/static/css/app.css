@@ -13,6 +13,11 @@
     }
 }
 
+.has-tip {
+    border-bottom: none;
+    font-weight: normal;
+}
+
 /* Sticky footer */
 #footer {
     position: fixed;

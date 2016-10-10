@@ -28,4 +28,9 @@ public class URLController {
     public String company() {
         return "company";
     }
+
+    @RequestMapping("/contact")
+    public String contact() {
+        return "contact";
+    }
 }
