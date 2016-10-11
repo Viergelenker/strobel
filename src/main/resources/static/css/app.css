@@ -153,18 +153,13 @@ h4 {
 }
 
 /* Company site submenu tabs */
-.tabRow {
-    background-color: #17CFB9;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    border: none;
-}
 .tabs {
-    background-color: #17CFB9;
     border: none;
     padding: 0;
 }
 
 ul.tabs li a {
+    color: black;
     padding-top: 17px;
     font-size: 100%;
 }
