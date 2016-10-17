@@ -1,18 +1,9 @@
 /* Flash of unstyled content fix */
-.no-js .top-bar {
+.top-bar-title {
     display: none;
 }
 
-@media screen and (min-width: 40em) {
-    .no-js .top-bar {
-        display: block;
-    }
-
-    .no-js .title-bar {
-        display: none;
-    }
-}
-
+/* Tooltip styling */
 .has-tip {
     border-bottom: none;
     font-weight: normal;
@@ -153,35 +144,29 @@ h4 {
 }
 
 /* Company site submenu tabs */
-.tabRow {
-    background-color: #17CFB9;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    border: none;
-}
 .tabs {
-    background-color: #17CFB9;
     border: none;
     padding: 0;
 }
 
-ul.tabs li a {
-    padding-top: 17px;
-    font-size: 100%;
-}
-
-ul.tabs li.is-active a {
-    color: #0078A0 !important;
-    background-color: transparent !important;
-}
-
 .tabs-title a {
     color: white;
-    padding: 14px;
 }
 
 .tabs-title a:hover {
     color: #0078A0;
     background-color: transparent;
+}
+
+ul.tabs li.is-active a {
+    color: white !important;
+    background-color: #0078A0 !important;
+}
+
+ul.tabs li a {
+    color: black;
+    padding-top: 17px;
+    font-size: 100%;
 }
 
 /* Carousel button color */
@@ -224,7 +209,6 @@ ul.tabs li.is-active a {
     border: 1px solid rgba(0, 0, 0, 0.04);
     overflow: hidden;
     position: relative;
-    text-align: center;
     border-radius: 4px;
 }
 
@@ -233,6 +217,7 @@ ul.tabs li.is-active a {
     height: 100%;
     position: absolute;
     overflow: hidden;
+    color: white;
     top: 0;
     left: 0;
 }
@@ -251,33 +236,7 @@ ul.tabs li.is-active a {
     padding: 10px;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    transition: all 0.3s ease-in-out;
-}
-
-.overlay-fade-in h2 {
-    color: #f2f2f2;
-    margin-top: 40%;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.overlay-fade-in .button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #FFF;
-    color: #222;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
-    position: relative;
-    border: 1px solid #999;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-.overlay-fade-in .button:hover {
-    box-shadow: 0 0 5px #000;
+    transition: all 0.4s ease-in-out;
 }
 
 .overlay-fade-in:hover img {
@@ -294,10 +253,6 @@ ul.tabs li.is-active a {
 
 .overlay-fade-in:hover p {
     transition-delay: 0.1s;
-}
-
-.overlay-fade-in:hover .button {
-    transition-delay: 0.2s;
 }
 
 /* Return to top Button styling */
