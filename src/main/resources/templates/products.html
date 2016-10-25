@@ -5,77 +5,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="row" style="background-color: white; min-width: 100%;">
-
-    <div class="small-3 columns hide-for-small-only">
-        <a href="/"><img src="images/Logo_Strobel.png" style="min-width: 180px;"/></a>
-    </div>
-    <div class="small-12 medium-9 columns end">
-        <div class="top-bar" style="background-color: transparent">
-
-            <!-- Triggers the mobile menu -->
-            <div class="top-bar-title" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-                <a class="menu-icon dark" type="button" data-open="modal1"></a>
-                <strong style="padding-left: 18px">
-                    <a href="/"><img src="images/Logo_Strobel.png" style="max-width: 140px"/></a>
-                </strong>
-            </div>
-
-            <div class="hide-for-small-only" style="padding-top: 14px;">
-                <div class="top-bar-left">
-                    <br class="hide-for-medium"/>
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/">Startseite</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr active" href="/products">Produkte</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/repair">Reparaturservice</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" style="white-space: nowrap;" href="/company">Strobel GmbH</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/contact">Kontakt</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<br/>
-
-<!-- Menu for mobile -->
-<div class="reveal" id="modal1" data-reveal="" style="background-color: rgba(44, 53, 57, 0.95); max-width: 60%">
-    <button class="close-button" data-close="" aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <h1 style="color: white">Menü</h1>
-    <hr/>
-    <a class="button expanded hollow" href="/">Startseite</a>
-    <a class="button expanded" href="/products">Produkte</a>
-    <a class="button expanded hollow" href="/repair">Reparaturservice</a>
-    <a class="button expanded hollow" href="/company">Strobel GmbH</a>
-    <a class="button expanded hollow" href="/contact">Kontakt</a>
-    <a class="button expanded hollow" href="/about">Impressum</a>
-</div>
+<div th:replace="fragments/navbar :: navbar (currentSite='products')"></div>
 
 <div class="row" id="firstRow">
 
@@ -313,9 +243,10 @@
 
                     <div class="small-12 medium-6 large-5 large-offset-1 columns carouselContainer">
                         <div class="carousel">
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
+                            <div><img src="images/haustuer_01.jpg"/></div>
+                            <div><img src="images/haustuer_02.jpg"/></div>
+                            <div><img src="images/haustuer_03.jpg"/></div>
+                            <div><img src="images/haustuer_04.jpg"/></div>
                         </div>
                     </div>
 
@@ -362,9 +293,8 @@
 
                     <div class="small-12 medium-6 large-5 large-offset-1 columns carouselContainer">
                         <div class="carousel">
-                            <div><img src="images/pr_vordaecher_01.jpg"/></div>
-                            <div><img src="images/pr_vordaecher_01.jpg"/></div>
-                            <div><img src="images/pr_vordaecher_01.jpg"/></div>
+                            <div><img src="images/vordach_01.jpg"/></div>
+                            <div><img src="images/vordach_02.jpg"/></div>
                         </div>
                     </div>
 
@@ -406,9 +336,10 @@
 
                     <div class="small-12 medium-6 large-5 large-offset-1 columns carouselContainer">
                         <div class="carousel">
-                            <div><img src="images/pr_wintergaerten_02.jpg"/></div>
-                            <div><img src="images/pr_wintergaerten_02.jpg"/></div>
-                            <div><img src="images/pr_wintergaerten_02.jpg"/></div>
+                            <div><img src="images/wintergarten_01.jpg"/></div>
+                            <div><img src="images/wintergarten_02.jpg"/></div>
+                            <div><img src="images/wintergarten_03.jpg"/></div>
+                            <div><img src="images/wintergarten_04.jpg"/></div>
                         </div>
                     </div>
 
@@ -450,9 +381,10 @@
 
                     <div class="small-12 medium-6 large-5 large-offset-1 columns carouselContainer">
                         <div class="carousel">
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
+                            <div><img src="images/fassade_01.jpg"/></div>
+                            <div><img src="images/fassade_02.jpg"/></div>
+                            <div><img src="images/fassade_03.jpg"/></div>
+                            <div><img src="images/fassade_04.jpg"/></div>
                         </div>
                     </div>
 

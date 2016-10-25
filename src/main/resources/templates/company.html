@@ -5,77 +5,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="row" style="background-color: white; min-width: 100%;">
-
-    <div class="small-3 columns hide-for-small-only">
-        <a href="/"><img src="images/Logo_Strobel.png" style="min-width: 180px;"/></a>
-    </div>
-    <div class="small-12 medium-9 columns end">
-        <div class="top-bar" style="background-color: transparent">
-
-            <!-- Triggers the mobile menu -->
-            <div class="top-bar-title" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-                <a class="menu-icon dark" type="button" data-open="modal1"></a>
-                <strong style="padding-left: 18px">
-                    <a href="/"><img src="images/Logo_Strobel.png" style="max-width: 140px"/></a>
-                </strong>
-            </div>
-
-            <div class="hide-for-small-only" style="padding-top: 14px;">
-                <div class="top-bar-left">
-                    <br class="hide-for-medium"/>
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/">Startseite</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/products">Produkte</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/repair">Reparaturservice</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr active" style="white-space: nowrap;" href="/company">Strobel GmbH</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/contact">Kontakt</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<br/>
-
-<!-- Menu for mobile -->
-<div class="reveal" id="modal1" data-reveal="" style="background-color: rgba(44, 53, 57, 0.95); max-width: 60%">
-    <button class="close-button" data-close="" aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <h1 style="color: white">Menü</h1>
-    <hr/>
-    <a class="button expanded hollow" href="/">Startseite</a>
-    <a class="button expanded hollow" href="/products">Produkte</a>
-    <a class="button expanded hollow" href="/repair">Reparaturservice</a>
-    <a class="button expanded" href="/company">Strobel GmbH</a>
-    <a class="button expanded hollow" href="/contact">Kontakt</a>
-    <a class="button expanded hollow" href="/about">Impressum</a>
-</div>
+<div th:replace="fragments/navbar :: navbar (currentSite='company')"></div>
 
 <div class="row" id="topRow">
 
@@ -97,230 +27,241 @@
 
         <!-- Firma section -->
         <section id="mag1" data-magellan-target="mag1">
-            <div class="productOverview">
-                <p style="font-size: 40px; text-align: center">Firma</p>
+            <div class="companyOverview">
+                <h1 style="font-size: 40px; text-align: center">Firma</h1>
                 <hr/>
                 <br/>
                 <br/>
-                <!-- panel 1 (Firma) -->
-                <div class="tabs-panel is-active" id="panel1">
-                    <div class="small-11 medium-10 small-centered columns">
 
-                        <div class="small-12 medium-6 large-6 columns">
-                            <img src="images/strobel_gmbh_01.jpg"/>
-                        </div>
-
-                        <div class="small-12 medium-6 large-6 columns">
-                            <p><b>Die Firma Strobel wurde im Jahre 1931 von Glasermeister Gustav STROBEL gegründet und
-                                von
-                                seinem
-                                Sohn
-                                Glasermeister Kurt Strobel von 1950 bis 1995 geführt. Seitdem führt Jörg Strobel,
-                                Glasermeister
-                                und
-                                Betriebswirt des Handwerks, erfolgreich die Firma. Seit 2014 gehört die vierte
-                                Generation mit
-                                Laura
-                                Strobel
-                                zur Geschäftsführung.</b></p>
-                            <p/>
-                        </div>
-                        <p>Die Erfahrung der Mitarbeiter und die Konzentration auf moderne Technologien gewährleistet
-                            unsere hohe Produktqualität. Es ist erklärtes Unternehmensziel, kundenindividuell,
-                            problemnah
-                            und spontan zu operieren und mit hoher Flexibilität hervorragende Leistungen für unsere
-                            Kunden
-                            zu erbringen. Dabei setzen wir auf aktuellste Fachkompetenz, hohe Motivation und
-                            Zuverlässigkeit
-                            unserer Mitarbeiter. Ebenso wichtig sind klare Regeln für Abläufe und das Zusammenwirken
-                            unserer
-                            innerbetrieblichen Funktionen. Aus der Kombination von Leistungsfähigkeit,
-                            Leistungsbereitschaft
-                            und systematischem Handeln wollen wir den größtmöglichen Nutzen für unsere Kunden erreichen
-                            und
-                            damit dauerhaften Erfolg für unser Unternehmen sichern. Damit legen wir die Basis, dass alle
-                            mit
-                            Erfolg für ein Ziel arbeiten: Die Zufriedenheit unserer Kunden.</p>
-                    </div>
+                <div class="small-12 medium-12 large-6 columns companyPageImages">
+                    <img src="images/firma.jpg"/>
                 </div>
-                <br/>
+
+                <p><b>Die Firma Strobel wurde im Jahre 1931 von Glasermeister Gustav STROBEL gegründet und
+                    von
+                    seinem
+                    Sohn
+                    Glasermeister Kurt Strobel von 1950 bis 1995 geführt. Seitdem führt Jörg Strobel,
+                    Glasermeister
+                    und
+                    Betriebswirt des Handwerks, erfolgreich die Firma. Seit 2014 gehört die vierte
+                    Generation mit
+                    Laura
+                    Strobel
+                    zur Geschäftsführung.</b></p>
+
+
+                <p>Die Erfahrung der Mitarbeiter und die Konzentration auf moderne Technologien gewährleistet
+                    unsere hohe Produktqualität. Es ist erklärtes Unternehmensziel, kundenindividuell,
+                    problemnah und spontan zu operieren und mit hoher Flexibilität hervorragende Leistungen für
+                    unsere
+                    Kunden zu erbringen.<br/>
+                    Dabei setzen wir auf aktuellste Fachkompetenz, hohe Motivation und
+                    Zuverlässigkeit unserer Mitarbeiter. Ebenso wichtig sind klare Regeln für Abläufe und das
+                    Zusammenwirken
+                    unserer innerbetrieblichen Funktionen. Aus der Kombination von Leistungsfähigkeit,
+                    Leistungsbereitschaft und systematischem Handeln wollen wir den größtmöglichen Nutzen für
+                    unsere Kunden erreichen
+                    und damit dauerhaften Erfolg für unser Unternehmen sichern. Damit legen wir die Basis, dass
+                    alle
+                    mit Erfolg für ein Ziel arbeiten: Die Zufriedenheit unserer Kunden.</p>
+
             </div>
         </section>
 
         <!-- Placeholder -->
         <div class="bgimg-1"></div>
 
-        <!-- Tueren section -->
+        <!-- Buero section -->
         <section id="mag2" data-magellan-target="mag2">
-            <div class="productOverview">
-                <p style="font-size: 40px; text-align: center">Haustüren</p>
+
+            <div class="companyOverview">
+                <h1 style="font-size: 40px; text-align: center">Büro</h1>
                 <hr/>
-                <p style="font-size: 20px; text-align: center">Eine Hauseingangstüre ist mehr als nur ein Eingang.</p>
-                <p style="font-size: 20px; text-align: center">Sie ist die Visitenkarte eines Hauses.</p>
                 <br/>
                 <br/>
 
-                <div class="row">
-
-                    <div class="small-12 medium-6 large-5 large-offset-1 columns carouselContainer">
-                        <div class="carousel">
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                        </div>
-                    </div>
-
-                    <div class="small-12 medium-6 large-5 end columns">
-                        <div class="card">
-                            <div class="content">
-                                <p>
-                                    Bei den Haustüren und Eingangsportalen spielt nicht nur die Ästhetik eine große
-                                    Rolle,
-                                    sondern eine Vielzahl technischer Funktionen. Sie muss optimale Sicherheit,
-                                    Schutz vor Lärm, Wind und Wetter sowie Wärme- und Schalldämmung besitzen.
-                                    Türen und Eingangsanlagen werden mit einem hohen Qualitätsniveau mit allen
-                                    möglichen
-                                    technischen Funktionen sowie ansprechendem Design von der Firma Strobel
-                                    gefertigt.
-                                </p>
-                            </div>
-                            <div class="action">
-                                <a href='http://adeco.atbit.de/app/Configurator.asp?user=26596' target="_blank">
-                                    Haustürkonfigurator <span class="fa fa-chevron-right"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="small-12 medium-12 large-6 columns companyPageImages">
+                    <img src="images/buero.jpg"/>
                 </div>
-                <br/>
+
+                <p><b>Für den reibungslosen Ablauf sind wir für Sie da. Von der Planung bis zur Ausführung
+                    begleiten
+                    wir Sie bei Ihren Bautätigkeiten.</b></p>
+
+                <p>Von links nach rechts:</p>
+                <ul class="names">
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Links im Foto">Joachim Pollak</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Zweite Person von links">Laura Strobel</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Mittig">René Buttig</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Zweite Person von rechts">Heike Strobel</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Rechts im Foto">Jörg Strobel</span></li>
+                </ul>
             </div>
         </section>
 
         <!-- Placeholder -->
         <div class="bgimg-1"></div>
 
-        <!-- Vordaecher section -->
+        <!-- Werkstatt section -->
         <section id="mag3" data-magellan-target="mag3">
-            <div class="productOverview">
-                <p style="font-size: 40px; text-align: center">Vordächer</p>
+
+            <div class="companyOverview">
+                <h1 style="font-size: 40px; text-align: center">Werkstatt</h1>
                 <hr/>
-                <p style="font-size: 20px; text-align: center">Um den Hauseingangsbereich vor Wind und Wetter zu
-                    schützen ist ein Vordach aus dem Hause STROBEL die optimale Lösung.</p>
                 <br/>
                 <br/>
 
-                <div class="row">
-
-                    <div class="small-12 medium-6 large-5 large-offset-1 columns carouselContainer">
-                        <div class="carousel">
-                            <div><img src="images/pr_vordaecher_01.jpg"/></div>
-                            <div><img src="images/pr_vordaecher_01.jpg"/></div>
-                            <div><img src="images/pr_vordaecher_01.jpg"/></div>
-                        </div>
-                    </div>
-
-                    <div class="small-12 medium-6 large-5 end columns">
-                        <div class="card">
-                            <div class="content">
-                                <p>
-                                    Bei der Wahl des Materials, der Farbe und der Konstruktion achten wir auf
-                                    harmonisches
-                                    und
-                                    stilgerechtes Einbinden des Vordaches in die Fassade und den Eingangsbereich.
-                                    Durch
-                                    unser
-                                    qualifiziertes Strobel-Team können wir eine optimale Planung, Fertigung und
-                                    Montage
-                                    gewährleisten.</p>
-                                <p>Überzeugen Sie sich selbst.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="small-12 medium-12 large-6 columns companyPageImages">
+                    <img src="images/werkstatt.jpg"/>
                 </div>
+
+                <p><b>In unserer Ludwigsburger Werkstatt entstehen Qualitätsprodukte mit höchstem Anspruch und
+                    innovativen Ideen.</b></p>
+
+                <p>Von links nach rechts:</p>
+                <ul class="names">
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Links im Foto">Michael Spahlinger</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Zweite Person von links">Antonio Massidda</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Mitte links">Wolfgang Hajek</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Mittig">Thomas Heinz</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Mitte rechts">Horst Saathoff</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Zweite Person von rechts">Dietmar Girrbach</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Rechts im Foto">Jürgen Kaiser</span></li>
+                </ul>
             </div>
+
         </section>
 
         <!-- Placeholder -->
         <div class="bgimg-1"></div>
 
-        <!-- Wintergaerten section -->
+        <!-- Montage section -->
         <section id="mag4" data-magellan-target="mag4">
-            <div class="productOverview">
-                <p style="font-size: 40px; text-align: center">Wintergärten</p>
+
+            <div class="companyOverview">
+                <h1 style="font-size: 40px; text-align: center">Montage</h1>
                 <hr/>
-                <p style="font-size: 20px; text-align: center">Um den Wohnkomfort zu steigern, sowie Wohnraum zu
-                    schaffen, ist ein Wintergarten aus unserer Produktion eine optimale Lösung.</p>
                 <br/>
                 <br/>
 
-                <div class="row">
-
-                    <div class="small-12 medium-6 large-5 large-offset-1 columns carouselContainer">
-                        <div class="carousel">
-                            <div><img src="images/pr_wintergaerten_02.jpg"/></div>
-                            <div><img src="images/pr_wintergaerten_02.jpg"/></div>
-                            <div><img src="images/pr_wintergaerten_02.jpg"/></div>
-                        </div>
-                    </div>
-
-                    <div class="small-12 medium-6 large-5 end columns">
-                        <div class="card">
-                            <div class="content">
-                                <p>Bei der Planung und Ausführung wird nicht nur Wert auf optimales Design und Aussehen
-                                    gelegt, sondern auch auf die funktionale Nutzung. Um ein optimales Wohnklima im
-                                    Sommer wie auch im Winter zu schaffen, benötigt man ein sehr breit gefächertes
-                                    Fachwissen. Dieses Wissen erlangen unsere Techniker, Meister und Facharbeiter durch
-                                    ständiges schulen und weiterbilden. Durch diesen Vorsprung an Wissen, können wir
-                                    verschiedene Konstruktionen mit den unterschiedlichsten Materialien planen und
-                                    herstellen. Um nichts dem Zufall zu überlassen, werden vor der Fertigung
-                                    CAD-Zeichnungen erstellt und mit den Bauherren und Planern durchgesprochen.
-                                    Bei der Auswahl der Konstruktion, der Gläser, der Beschattungen sowie der
-                                    kontrollierten Be- und Entlüftung stehen Ihnen optimale Referenzobjekte und unser
-                                    Ausstellungsraum zur Verfügung.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="small-12 medium-12 large-6 columns companyPageImages">
+                    <img src="images/montage.jpg"/>
                 </div>
+
+                <p><b>
+                    Unser Team der Montage kümmert sich um den reibungslosen und sauberen Einbau bei Ihnen vor Ort.
+                </b></p>
+
+                <p>Von links nach rechts:</p>
+                <ul class="names">
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Links im Foto">Karsten Seeberger</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Zweite Person von links">Klaus Mäntele</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Mittig">Rico Pfützner</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Zweite Person von rechts">Walter Wurm</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Rechts im Foto">Hanns-Jörg Otto</span></li>
+                </ul>
             </div>
+
         </section>
 
         <!-- Placeholder -->
         <div class="bgimg-1"></div>
 
-        <!-- Fassaden section -->
+        <!-- Reparatur section -->
         <section id="mag5" data-magellan-target="mag5">
-            <div class="productOverview">
-                <p style="font-size: 40px; text-align: center">Fassaden</p>
+
+            <div class="companyOverview">
+                <h1 style="font-size: 40px; text-align: center">Reparatur-Service</h1>
                 <hr/>
-                <p style="font-size: 20px; text-align: center">Oft sind es nur kleine Feinheiten, die den Reiz einer
-                    schönen Optik ausmachen.</p>
                 <br/>
                 <br/>
 
-                <div class="row">
-
-                    <div class="small-12 medium-6 large-5 large-offset-1 columns carouselContainer">
-                        <div class="carousel">
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                            <div><img src="images/pr_haustueren_03.jpg"/></div>
-                        </div>
-                    </div>
-
-                    <div class="small-12 medium-6 large-5 end columns">
-                        <div class="card">
-                            <div class="content">
-                                <p>In der heutigen Zeit ist es sehr wichtig, bei der Planung und Ausführung einer
-                                    Fassade die richtigen Materialien miteinander abzustimmen, so dass sie einen
-                                    reizvollen Kontrast im Gebäude sowie in der Landschaft bilden.</p>
-                                <p>Wir bieten eine große Auswahl an verschiedenen Systemen, Gläsern und Konstruktionen,
-                                    die bei höchster Funktionalität die ideale Lösung für jedes Gebäude und jeden
-                                    Geschmack darstellen.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="small-12 medium-12 large-6 columns companyPageImages">
+                    <img src="images/reparatur.jpg"/>
                 </div>
+
+                <p><b>Wenn es klirrt und klemmt sind unsere versierten Handwerker schnell zur Stelle. Wir bieten Ihnen
+                    eine fachgerechte Reparatur von der Verglasung bis zu den Beschlägen.</b></p>
+
+                <p>Von links nach rechts:</p>
+                <ul class="names">
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Links im Foto">Wolfgang Winter</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Mittig">Thomas Graupe</span></li>
+                    <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
+                              data-disable-hover="false"
+                              tabindex="3" title="Rechts im Foto">Rainer Hartmaier</span></li>
+                </ul>
             </div>
+
+        </section>
+
+        <!-- Placeholder -->
+        <div class="bgimg-1"></div>
+
+        <!-- Ausbildung section -->
+        <section id="mag6" data-magellan-target="mag6">
+
+            <div class="companyOverview">
+                <h1 style="font-size: 40px; text-align: center">Ausbildung</h1>
+                <hr/>
+                <br/>
+                <br/>
+
+                <div class="small-12 medium-12 large-6 columns companyPageImages">
+                    <img src="images/ausbildung.jpg"/>
+                </div>
+
+                <p><b>Die Qualifikation unserer Mitarbeiter ist uns sehr wichtig. Als Handwerksbetrieb bilden wir schon
+                    seit den Anfängen der Firma aus und haben auch schon einige Landessieger hervorgebracht.</b></p>
+
+                <p>Aktuell sind folgende Auszubildende im Betrieb tätig:</p>
+                <ul class="names">
+                    <li>Ali Mercan</li>
+                    <li>Simon Schwerdtfeger</li>
+                    <li>Tobias Rösch</li>
+                    <li>Lena Strobel</li>
+                </ul>
+            </div>
+
         </section>
 
         <div class="row">
@@ -332,253 +273,6 @@
 
 <!-- Back to top button -->
 <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
-<div class="row collapse">
-
-    <div class="small-10 small-centered columns">
-        <!-- Submenu tabs -->
-        <ul class="tabs" data-tabs="" id="company-tabs">
-            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Firma</a></li>
-            <li class="tabs-title"><a href="#panel2">Büro</a></li>
-            <li class="tabs-title"><a href="#panel3">Werkstatt</a></li>
-            <li class="tabs-title"><a href="#panel4">Montage</a></li>
-            <li class="tabs-title"><a href="#panel5">Reparatur</a></li>
-            <li class="tabs-title"><a href="#panel6">Ausbildung</a></li>
-        </ul>
-
-        <!-- Submenu content -->
-        <div class="tabs-content" data-tabs-content="company-tabs"
-             style="border: none; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);">
-
-            <!-- panel 1 (Firma) -->
-            <div class="tabs-panel is-active" id="panel1">
-                <div class="small-11 medium-10 small-centered columns">
-
-                    <div class="media-object stack-for-small">
-                        <div class="media-object-section">
-                            <div class="thumbnail">
-                                <img src="images/strobel_gmbh_01.jpg"/>
-                            </div>
-                        </div>
-                        <div class="media-object-section">
-                            <p><b>Die Firma Strobel wurde im Jahre 1931 von Glasermeister Gustav STROBEL gegründet und
-                                von
-                                seinem
-                                Sohn
-                                Glasermeister Kurt Strobel von 1950 bis 1995 geführt. Seitdem führt Jörg Strobel,
-                                Glasermeister
-                                und
-                                Betriebswirt des Handwerks, erfolgreich die Firma. Seit 2014 gehört die vierte
-                                Generation mit
-                                Laura
-                                Strobel
-                                zur Geschäftsführung.</b></p>
-                        </div>
-                        <p/>
-                        <p>Die Erfahrung der Mitarbeiter und die Konzentration auf moderne Technologien gewährleistet
-                            unsere hohe Produktqualität. Es ist erklärtes Unternehmensziel, kundenindividuell,
-                            problemnah
-                            und spontan zu operieren und mit hoher Flexibilität hervorragende Leistungen für unsere
-                            Kunden
-                            zu erbringen. Dabei setzen wir auf aktuellste Fachkompetenz, hohe Motivation und
-                            Zuverlässigkeit
-                            unserer Mitarbeiter. Ebenso wichtig sind klare Regeln für Abläufe und das Zusammenwirken
-                            unserer
-                            innerbetrieblichen Funktionen. Aus der Kombination von Leistungsfähigkeit,
-                            Leistungsbereitschaft
-                            und systematischem Handeln wollen wir den größtmöglichen Nutzen für unsere Kunden erreichen
-                            und
-                            damit dauerhaften Erfolg für unser Unternehmen sichern. Damit legen wir die Basis, dass alle
-                            mit
-                            Erfolg für ein Ziel arbeiten: Die Zufriedenheit unserer Kunden.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- panel 2 (Büro) -->
-            <div class="tabs-panel" id="panel2">
-                <div class="small-11 medium-10 small-centered columns">
-
-                    <p><b>
-                        Für den reibungslosen Ablauf sind wir für Sie da. Von Planung bis zur Ausführung begleiten wir
-                        Sie bei Ihren Bautätigkeiten.
-                    </b></p>
-                    <div class="media-object stack-for-small">
-                        <div class="media-object-section">
-                            <div class="thumbnail">
-                                <img src="images/strobel_gmbh_02.jpg"/>
-                            </div>
-                        </div>
-                        <div class="media-object-section">
-                            <p>Von links nach rechts:</p>
-                            <ul>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Links im Foto">Joachim Pollak</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Zweite Person von links">Laura Strobel</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Mittig">René Buttig</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Zweite Person von rechts">Heike Strobel</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Rechts im Foto">Jörg Strobel</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- panel 3 (Werkstatt) -->
-            <div class="tabs-panel" id="panel3">
-                <div class="small-11 medium-10 small-centered columns">
-
-                    <p><b>
-                        In unserer Ludwigsburger Werkstatt entstehen Qualitätsprodukte mit höchstem Anspruch und
-                        innovativen
-                        Ideen.
-                    </b></p>
-                    <div class="media-object stack-for-small">
-                        <div class="media-object-section">
-                            <div class="thumbnail">
-                                <img src="images/strobel_gmbh_03.jpg"/>
-                            </div>
-                        </div>
-                        <div class="media-object-section">
-                            <p>Von links nach rechts:</p>
-                            <ul>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Links im Foto">Michael Spahlinger</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Zweite Person von links">Antonio Massidda</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Mitte links">Wolfgang Hajek</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Mittig">Thomas Heinz</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Mitte rechts">Horst Saathoff</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Zweite Person von rechts">Dietmar Girrbach</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Rechts im Foto">Jürgen Kaiser</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- panel 4 (Montage) -->
-            <div class="tabs-panel" id="panel4">
-                <div class="small-11 medium-10 small-centered columns">
-
-                    <p><b>
-                        Unser Team der Montage kümmert sich um den reibungslosen und sauberen Einbau bei Ihnen vor Ort.
-                    </b></p>
-                    <div class="media-object stack-for-small">
-                        <div class="media-object-section">
-                            <div class="thumbnail">
-                                <img src="images/strobel_gmbh_04.jpg"/>
-                            </div>
-                        </div>
-                        <div class="media-object-section">
-                            <p>Von links nach rechts:</p>
-                            <ul>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Links im Foto">Karsten Seeberger</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Zweite Person von links">Klaus Mäntele</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Mittig">Rico Pfützner</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Zweite Person von rechts">Walter Wurm</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Rechts im Foto">Hanns-Jörg Otto</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- panel 5 (Reparatur) -->
-            <div class="tabs-panel" id="panel5">
-                <div class="small-11 medium-10 small-centered columns">
-
-                    <p><b>
-                        Wenn es klirrt und klemmt sind unsere versierten Handwerker schnell zur Stelle. Wir bieten Ihnen
-                        eine
-                        fachgerechte Reparatur von der Verglasung bis zu den Beschlägen.
-                    </b></p>
-                    <div class="media-object stack-for-small">
-                        <div class="media-object-section">
-                            <div class="thumbnail">
-                                <img src="images/strobel_gmbh_05.jpg"/>
-                            </div>
-                        </div>
-                        <div class="media-object-section">
-                            <p>Von links nach rechts:</p>
-                            <ul>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Links im Foto">Wolfgang Winter</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Mittig">Thomas Graupe</span></li>
-                                <li><span data-tooltip="" aria-haspopup="true" class="has-tip right"
-                                          data-disable-hover="false"
-                                          tabindex="3" title="Rechts im Foto">Rainer Hartmaier</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- panel 6 (Ausbildung) -->
-            <div class="tabs-panel" id="panel6">
-                <div class="small-11 medium-10 small-centered columns">
-
-                    <p><b>
-                        Die Qualifikation unserer Mitarbeiter ist uns sehr wichtig. Als Handwerksbetrieb bilden wir
-                        schon seit
-                        den Anfängen der Firma aus und haben auch schon einige Landessieger hervorgebracht.
-                    </b></p>
-                    <div class="media-object stack-for-small">
-                        <div class="media-object-section">
-                            <div class="thumbnail">
-                                <img src="images/strobel_gmbh_06.jpg"/>
-                            </div>
-                        </div>
-                        <div class="media-object-section">
-                            <p>Aktuell sind folgende Auszubildende im Betrieb tätig:</p>
-                            <ul>
-                                <li>Ali Mercan</li>
-                                <li>Simon Schwerdtfeger</li>
-                                <li>Tobias Rösch</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <div class="row">
     <!-- Placeholder -->

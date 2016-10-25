@@ -5,76 +5,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="row navbar">
-
-    <div class="small-3 navbarLogo columns hide-for-small-only">
-        <a href="/"><img class="logoMain" src="images/logo_Strobel.png"/></a>
-    </div>
-    <div class="small-12 medium-8 medium-offset-1 text-right columns end">
-        <div class="top-bar" style="background-color: transparent">
-
-            <!-- Triggers the mobile menu -->
-            <div class="top-bar-title" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-                <a class="menu-icon dark" type="button" data-open="modal1"></a>
-                <strong style="padding-left: 18px">
-                    <a href="/"><img class="logoMobile" src="images/logo_Strobel.png"/></a>
-                </strong>
-            </div>
-
-            <div class="hide-for-small-only navbarRightSection">
-                <div class="top-bar-left">
-                    <br class="hide-for-medium"/>
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr active" href="/">Startseite</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/products">Produkte</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/repair">Reparaturservice</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" style="white-space: nowrap;" href="/company">Strobel GmbH</a></li>
-                    </ul>
-                </div>
-
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal menu" style="background-color: transparent">
-                        <li><a class="hvr" href="/contact">Kontakt</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<br/>
-
-<!-- Menu for mobile -->
-<div class="reveal" id="modal1" data-reveal="">
-    <button class="close-button" data-close="" aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <h1 style="color: white">Menü</h1>
-    <hr/>
-    <a class="button expanded" href="/">Startseite</a>
-    <a class="button expanded hollow" href="/products">Produkte</a>
-    <a class="button expanded hollow" href="/repair">Reparaturservice</a>
-    <a class="button expanded hollow" href="/company">Strobel GmbH</a>
-    <a class="button expanded hollow" href="/contact">Kontakt</a>
-    <a class="button expanded hollow" href="/about">Impressum</a>
-</div>
+<div th:replace="fragments/navbar :: navbar (currentSite='welcome')"></div>
 
 <div class="row">
 
@@ -107,7 +38,7 @@
             <div><img src="images/welcome_01.jpg"/></div>
             <div><img src="images/welcome_02.jpg"/></div>
             <div><img src="images/welcome_03.jpg"/></div>
-            <div><img src="images/home_01.jpg"/></div>
+            <div><img src="images/welcome_04.jpg"/></div>
         </div>
     </div>
 
