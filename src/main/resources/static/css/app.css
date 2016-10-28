@@ -146,6 +146,16 @@ img {
     text-align: center;
 }
 
+.productButton a.button.hollow {
+    border: 1px solid #005091;
+    color: #005091;
+}
+
+.productButton a.button.hollow:hover, a.button.hollow:focus {
+    background-color: #005091;
+    color: #fefefe;
+}
+
 .productOverview {
     color: #005091;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
