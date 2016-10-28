@@ -113,13 +113,15 @@ img {
 
 /* Hover effect */
 .hvr:hover {
-    background-color: #005091;
-    color: white;
+    border-bottom: solid #005091;
+    transition: border-bottom 0.25s ease-out, color 0.25s ease-out;
+    color: #005091;
 }
 
 .top-bar-left ul li a.active {
-    background-color: #005091;
-    color: white;
+    border-bottom: solid #005091;
+    transition: border-bottom 0.25s ease-out, color 0.25s ease-out;
+    color: #005091;
 }
 
 /* Div at the contact page */
@@ -258,10 +260,6 @@ img {
 /* Placeholder */
 .bgimg-1 {
     height: 130px;
-}
-
-.bgimg-60 {
-    height: 60px;
 }
 
 /* Magellan */

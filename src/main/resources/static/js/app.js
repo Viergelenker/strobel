@@ -5,7 +5,7 @@ $(document).foundation();
 
 // ===== Scroll to Top ====
 $(window).scroll(function () {
-    if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+    if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 100px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
     } else {
         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
@@ -23,7 +23,5 @@ $(document).ready(function(){
         autoplay: true,
         infinite: true,
         autoplaySpeed: 5000,
-        dots: true,
-        pauseOnDotsHover: true,
 });
 });
