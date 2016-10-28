@@ -42,6 +42,27 @@
     max-width: 70%;
 }
 
+#modal1 a.button {
+    background-color: #005091;
+    color: white;
+}
+
+#modal1 a.button:hover, .button:focus {
+    background-color: #005091;
+    color: #fefefe;
+    border-right: solid thin;
+    border-left: solid thin;
+}
+
+#modal1 a.button.hollow {
+    border: 1px solid #005091;
+    color: rgb(220, 220, 220);
+}
+
+#modal1 a.button.hollow, a.button.hollow:hover, a.button.hollow:focus {
+    background-color: transparent;
+}
+
 /* Tooltip styling */
 .has-tip {
     border-bottom: none;
@@ -53,7 +74,7 @@
     position: fixed;
     bottom: 0;
     min-width: 100%;
-    background-color: rgba(50, 50, 50, 0.95);
+    background-color: rgba(44, 53, 57, 0.95);
     padding: 10px
 }
 
@@ -104,7 +125,7 @@ img {
 /* Div at the contact page */
 .wrapper {
     padding: 20px;
-    background-color: rgba(10, 130, 170, 0.7);
+    background-color: rgba(0, 80, 145, 0.8);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     color: white;
 }
@@ -124,7 +145,7 @@ img {
 }
 
 .productOverview {
-    color: #284291;
+    color: #005091;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     padding: 30px;
     padding-bottom: 80px;
@@ -133,9 +154,9 @@ img {
 /* Cards */
 .card {
     overflow: hidden;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border: solid thin rgba(40, 66, 145, 0.5);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     color: #272727;
-    border-radius: 2px;
     background-color: white;
 }
 
@@ -194,10 +215,15 @@ img {
 }
 
 .companyOverview {
-    color: #284291;
+    color: #005091;
+    font-weight: 400;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     padding: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
+}
+
+.media-object-section {
+    color: #005091;
 }
 
 .names {
@@ -244,8 +270,8 @@ img {
 }
 
 [data-magellan] a.active, [data-magellan] a.active:focus {
-    background: #28CE9D;
-    color: white;
+    font-size: large;
+    font-weight: 900;
 }
 
 /* Products page images */
