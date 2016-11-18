@@ -185,7 +185,6 @@ img {
 
 .card .content {
     padding: 1.3rem;
-    font-weight: 300;
     border-radius: 0 0 2px 2px;
 }
 
@@ -239,7 +238,7 @@ img {
 }
 
 .media-object-section {
-    color: #005091;
+    color: #272727;
 }
 
 .names {
