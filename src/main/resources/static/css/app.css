@@ -36,6 +36,10 @@
     min-width: 140px;
 }
 
+.top-bar-left {
+    float: none;
+}
+
 /* Mobile menu */
 #modal1 {
     background-color: rgba(44, 53, 57, 0.95);

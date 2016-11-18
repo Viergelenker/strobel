@@ -5,10 +5,15 @@
     <!-- Navbar -->
     <div class="row navbar">
 
-        <div class="small-4 navbarLogo columns hide-for-small-only">
+        <div class="medium-12 large-4 navbarLogo columns show-for-large">
             <a href="/"><img class="logoMain" src="images/logo_Strobel.png"/></a>
         </div>
-        <div class="small-12 medium-8 columns">
+
+        <div class="medium-12  navbarLogo columns show-for-medium-only">
+            <a href="/"><img class="logoMain float-center" src="images/logo_Strobel.png"/></a>
+        </div>
+
+        <div class="small-12 medium-12 large-8 columns">
             <div class="top-bar">
 
                 <!-- Triggers the mobile menu -->
@@ -19,38 +24,17 @@
                     </strong>
                 </div>
 
-                <div class="hide-for-small-only navbarRightSection float-center">
+                <div class="hide-for-small-only navbarRightSection">
                     <div class="top-bar-left">
                         <br class="hide-for-medium"/>
-                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
+                        <ul class="medium-horizontal menu" style="background-color: transparent; display: table; margin: 0 auto;">
                             <li><a class="hvr" th:classappend="${currentSite == 'welcome'} ? active" href="/">Startseite</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="top-bar-left">
-                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
                             <li><a class="hvr" th:classappend="${currentSite == 'products'} ? active" href="/products">Produkte</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="top-bar-left">
-                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
                             <li><a class="hvr" th:classappend="${currentSite == 'repair'} ? active" href="/repair">Reparaturservice</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="top-bar-left">
-                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
                             <li><a class="hvr" th:classappend="${currentSite == 'company'} ? active" style="white-space: nowrap;" href="/company">Strobel GmbH</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="top-bar-left">
-                        <ul class="vertical medium-horizontal menu" style="background-color: transparent">
                             <li><a class="hvr" th:classappend="${currentSite == 'contact'} ? active" href="/contact">Kontakt</a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
