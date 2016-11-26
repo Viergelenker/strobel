@@ -1,4 +1,4 @@
-# BEGIN Expires-Headers
+# Expires-Headers
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresDefault "access plus 1 seconds"
@@ -14,17 +14,15 @@ ExpiresByType application/x-javascript "access plus 4592000 seconds"
 ExpiresByType text/html "access plus 6000 seconds"
 ExpiresByType application/xhtml+xml "access plus 6000 seconds"
 </IfModule>
-# END Expires-Headers
 
-# BEGIN Last-Modified-Headers
+# Last-Modified-Headers
 <IfModule mod_headers.c>
 <FilesMatch "\.(json|pdf|swf|bmp|gif|jpeg|jpg|png|svg|tiff|ico|flv|js)$">
 Header Set Last-Modified "Fri, 01 Jan 2013 12:00:00 GMT"
 </FilesMatch>
 </IfModule>
-# END Last-Modified-Headers
 
-# BEGIN Gzip-Komprimierung
+# Gzip
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/xml text/css text/plain
 AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml application/xml
@@ -33,4 +31,3 @@ AddOutputFilterByType DEFLATE text/javascript application/javascript application
 AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-otf
 AddOutputFilterByType DEFLATE font/truetype font/opentype
 </IfModule>
-# END Gzip-Komprimierung
