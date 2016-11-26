@@ -31,7 +31,7 @@
                             <li><a class="hvr" th:classappend="${currentSite == 'welcome'} ? active" href="/">Startseite</a></li>
                             <li><a class="hvr" th:classappend="${currentSite == 'products'} ? active" href="/products">Produkte</a></li>
                             <li><a class="hvr" th:classappend="${currentSite == 'repair'} ? active" href="/repair">Reparaturservice</a></li>
-                            <li><a class="hvr" th:classappend="${currentSite == 'company'} ? active" style="white-space: nowrap;" href="/company">Strobel GmbH</a></li>
+                            <li><a class="hvr" th:classappend="${currentSite == 'aboutUs'} ? active" href="/company">Über uns</a></li>
                             <li><a class="hvr" th:classappend="${currentSite == 'contact'} ? active" href="/contact">Kontakt</a></li>
                         </ul>
                     </div>
@@ -52,9 +52,9 @@
         <a class="button expanded" th:classappend="${currentSite == 'welcome'} ? hollow" href="/">Startseite</a>
         <a class="button expanded" th:classappend="${currentSite == 'products'} ? hollow" href="/products">Produkte</a>
         <a class="button expanded" th:classappend="${currentSite == 'repair'} ? hollow" href="/repair">Reparaturservice</a>
-        <a class="button expanded" th:classappend="${currentSite == 'company'} ? hollow" href="/company">Strobel GmbH</a>
+        <a class="button expanded" th:classappend="${currentSite == 'aboutUs'} ? hollow" href="/company">Über uns</a>
         <a class="button expanded" th:classappend="${currentSite == 'contact'} ? hollow" href="/contact">Kontakt</a>
-        <a class="button expanded" th:classappend="${currentSite == 'about'} ? hollow" href="/about">Impressum</a>
+        <a class="button expanded" th:classappend="${currentSite == 'imprint'} ? hollow" href="/about">Impressum</a>
     </div>
 
 </th:block>

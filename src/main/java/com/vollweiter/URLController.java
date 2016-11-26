@@ -26,7 +26,7 @@ public class URLController {
 
     @RequestMapping("/company")
     public String company() {
-        return "company";
+        return "aboutUs";
     }
 
     @RequestMapping("/contact")
@@ -36,6 +36,6 @@ public class URLController {
 
     @RequestMapping("/about")
     public String about() {
-        return "about";
+        return "imprint";
     }
 }
